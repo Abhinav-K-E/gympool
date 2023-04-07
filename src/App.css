@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+  font-family: 'Josefin Sans';
+  background-color: #fff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3a1212;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.logo {
+  background: linear-gradient(90deg, #D37470 5.53%, #2DB9F4 105.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.nav-link {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  background: rgba(115, 195, 211, 0.44);
+  border: 2px solid #73C3D3;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.hero-btn{
+  background-color: #D37470;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn:hover{
+  background-color: #d37370de;
+  transition: all .5s ease-in-out;
+}
+
+.item-name-cat {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  width: 729px;
+  height: 742px;
+}
+
+.hero-banner-img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.exercise-card {
+  width: 400px;
+  height: 420px;
+  background: #fff;
+  border: 2px solid #D37470;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 13px 80px rgba(0, 0, 0, 0.07), 
+              0px 5.43109px 33.4221px rgba(0, 0, 0, 0.0503198), 
+              0px 2.90372px 17.869px rgba(0, 0, 0, 0.0417275), 
+              0px 1.6278px 10.0172px rgba(0, 0, 0, 0.035), 
+              0px 0.864513px 5.32008px rgba(0, 0, 0, 0.0282725), 
+              0px 0.359743px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+.exercise-card img {
+  height: 326px;
+  border-radius: 20px;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #2DB9F4 !important;
+  border: 1px solid #2DB9F4 !important;
+}
+
+
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+  .detail-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* .hero-banner-img {
+    display: none;
+  } */
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .hero-banner-img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .hero-banner-img{
+    display: none;
+  }
+  .hero-txt{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .exercise-card {
+    width: 260px;
+    height: 360px;
+  }
+}
